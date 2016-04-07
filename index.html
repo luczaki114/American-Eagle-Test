@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Beautiful Beginnings - Celebrating Baby and Child</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
     <link rel="stylesheet" href="Styles/bootstrap.min.css">
     <link rel="stylesheet" href="Styles/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
@@ -24,21 +22,21 @@
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav, #main-nav2" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <p class="navbar-text xs-inline-block">Call us at: <b>708-246-1212</b></p>
-            <a href="#" class="navbar-link visible-xs-inline-block"><img src="Assets/Shopping Cart.jpg" alt="Shopping Cart" /></a>
+              <p class="navbar-text xs-inline-block">Call us at: <b>708-246-1212</b></p>
+              <a href="#" class="visible-xs-inline-block" id="shopping-cart-icon"><img src="Assets/Shopping Cart.jpg" alt="Shopping Cart" /></a>
           </div>
           <div class="collapse navbar-collapse">
-            <button type="button" class="btn btn-pink navbar-btn">LIVE CHAT NOW</button>
+            <button type="button" class="btn navbar-btn btn-pink">LIVE CHAT NOW</button>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Baby Registry</a></li>
               <li><a href="#">Login/Register</a></li>
-              <li><a href="#">5 items • Checkout $2103.92</a></li>
+              <li><a href="#" class="hidden-xs">5 items • Checkout $2103.92</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -47,7 +45,7 @@
 
       <!-- Main section of header -->
       <div class="container-fluid">
-        <div class="row row-header vcenter">
+        <div class="row row-divider vcenter">
           <div class="col-sm-3 cute-words hidden-xs">
             <h2 id="cute-words">
               Children. Our greatest earthly blessings.
@@ -56,16 +54,8 @@
           <div class="col-xs-12 col-sm-6 Logo">
             <img src="Assets/Beautiful beginnings.jpg" alt="Logo" id="main-logo" class="img-responsive"/>
           </div>
-          <div class="col-sm-3 collapse navbar-collapse" id="main-nav2">
-            <div class="input-group search-box" >
-              <input type="text" class="form-control" placeholder="Search this site...">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">
-                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                  <span class="sr-only">Search</span>
-                </button>
-              </span>
-            </div><!-- /input-group -->
+          <div class="col-sm-3" id="search-box-shell-sm">
+            <!-- Shell div for search-box -->
           </div>
         </div> <!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -75,7 +65,16 @@
 
 
       <!-- Main Nav -->
-      <nav class="collapse navbar-collapse" id="main-nav">
+      <nav class="collapse navbar-collapse search-box-shell-xs" id="main-nav">
+        <div class="input-group search-box">
+          <input type="text" class="form-control" placeholder="Search this site...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              <span class="sr-only">Search</span>
+            </button>
+          </span>
+        </div><!-- /input-group -->
         <ul class="nav nav-justified">
           <li><a href="#">BABY APPAREL</a></li>
           <li><a href="#">BABY GIFTS</a></li>
@@ -278,4 +277,9 @@
 
 
   </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="Scripts/bootstrap.min.js"></script>
+  <script src="Scripts/scripts.js"></script>
+
 </html>

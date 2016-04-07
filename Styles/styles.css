@@ -70,7 +70,7 @@ div.vcenter {
     #ffcccc 15em, #ffcccc 20em
   );
 }
-a.navbar-link.visible-xs-inline-block {
+a#shopping-cart-icon {
   margin: 15px;
   float: right;
 }
@@ -79,12 +79,6 @@ a.navbar-link.visible-xs-inline-block {
   border-radius: 0;
   border-width: 1px;
   padding: 2px;
-}
-
-div.navbar-collapse button.btn div#live-chat-btn {
-  background-image: linear-gradient(0deg, #ffe8e8, white);
-  padding: 2px;
-  outline: 1px grey solid;
 }
 
 .navbar, .navbar-default {
@@ -116,8 +110,6 @@ div.search-box span.input-group-btn button.btn {
   border-left: none;
 }
 
-
-
 /* input.form-control placeholder */
 div.search-box input.form-control::-webkit-input-placeholder {
     color: black;
@@ -143,7 +135,7 @@ img#main-logo {
   margin-left: auto;
   margin-right: auto;
 }
-.row-header {
+.row-divider {
    border-bottom: 1px solid #d6d6d6;
    -webkit-box-shadow: 0px 10px 6px -10px rgba(0,0,0,0.75);
    -moz-box-shadow: 0px 10px 6px -10px rgba(0,0,0,0.75);
@@ -156,7 +148,6 @@ ul.nav-justified {
 ul.nav-justified li {
   white-space: nowrap;
 }
-
 ul.nav-justified li a {
   color: black;
 }
