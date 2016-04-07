@@ -61,7 +61,6 @@ div.vcenter {
 }
 
 /* header and navigation */
-
 .color-gradient {
   height: 10px;
   background-image: repeating-linear-gradient(90deg, #b8d1ed, #b8d1ed 5em,
@@ -74,12 +73,7 @@ a#shopping-cart-icon {
   margin: 15px;
   float: right;
 }
-.double-border{
-  border-color: grey;
-  border-radius: 0;
-  border-width: 1px;
-  padding: 2px;
-}
+
 
 .navbar, .navbar-default {
   background-color: white;

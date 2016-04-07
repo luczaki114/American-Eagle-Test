@@ -1,17 +1,19 @@
-var searchBoxPlacer = function() {
+// finds an element that needs different placement based on viewport size and then prepends it accordingly.
+var prependPlacer = function (element, greaterthan, lessthan) {
   var width = $(window).width();
-  if (width > 768) {
-    $("#search-box-shell-sm").append($(".search-box"));
-  } else if (width <= 768) {
-    $(".search-box-shell-xs").prepend($(".search-box"));
-  }
-};
+  (width > 768) ? greaterthan.prepend(element) : lessthan.prepend(element);
+}
+
+
 
 $(document).ready (function () {
-  searchBoxPlacer();
+  prependPlacer($(".search-box"), $("#search-box-shell-sm"), $(".search-box-shell-xs"));
+  prependPlacer($("#login-register"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
+  prependPlacer($("#baby-registry"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
 
-  $( window ).resize(function() {
-    searchBoxPlacer();
-    console.log("resize happened");
+  $(window).resize(function() {
+    prependPlacer($(".search-box"), $("#search-box-shell-sm"), $(".search-box-shell-xs"));
+    prependPlacer($("#login-register"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
+    prependPlacer($("#baby-registry"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
   });
 });
