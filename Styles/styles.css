@@ -1,0 +1,329 @@
+/* Typography */
+h1, h2, h3, h4, h5, h6 , p, li a, li {
+  font-family: Georgia;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #7494b7;
+}
+button{
+  font-family: Georgia;
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+p.signature {
+  font-family: 'Alex Brush', cursive;
+  font-size: 24px;
+}
+
+/* Buttons */
+button.btn-pink {
+  color: #666666;
+  border-radius: 0;
+  border: 1px solid #dbdbdb;
+  background: white;
+  background-image: -webkit-linear-gradient(90deg, #ffe5e5, white) ;
+  position: relative;
+}
+button.btn-pink:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border: 1px solid #dbdbdb;
+}
+
+/* Body & Utility */
+body {
+  background-image:url("../Assets/dots.jpg");
+  background-image:-webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0), rgba(255,255,255,1)),
+  url("../Assets/dots.jpg");
+}
+html, body, .container,{
+  height: 100%;
+}
+
+body .wrapper {
+  background-color: white;
+  border-left: 1px #d6d6d6 solid;
+  border-right: 1px #d6d6d6 solid;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+div.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+/* header and navigation */
+
+.color-gradient {
+  height: 10px;
+  background-image: repeating-linear-gradient(90deg, #b8d1ed, #b8d1ed 5em,
+    #d5dc91 5em, #d5dc91 10em,
+    #ffefbc 10em, #ffefbc 15em,
+    #ffcccc 15em, #ffcccc 20em
+  );
+}
+
+.double-border{
+  border-color: grey;
+  border-radius: 0;
+  border-width: 1px;
+  padding: 2px;
+}
+
+div.navbar-collapse button.btn div#live-chat-btn {
+  background-image: linear-gradient(0deg, #ffe8e8, white);
+  padding: 2px;
+  outline: 1px grey solid;
+}
+
+.navbar, .navbar-default {
+  background-color: white;
+  border: none;
+  border-bottom: 1px #d6d6d6 solid;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+/* Search Box*/
+div.search-box {
+  border: .5px solid white;
+  outline: .5px solid #f0f0f0;
+}
+
+div.search-box input.form-control,
+div.search-box span.input-group-btn button.btn {
+  border-radius: 0;
+  background: linear-gradient(0deg, white, #d6d6d6);
+  color: black;
+}
+div.search-box input.form-control {
+  border: 1px #d6d6d6 solid;
+  border-right: none;
+
+}
+div.search-box span.input-group-btn button.btn {
+  border: 1px #d6d6d6 solid;
+  border-left: none;
+}
+
+
+
+/* input.form-control placeholder */
+div.search-box input.form-control::-webkit-input-placeholder {
+    color: black;
+}
+div.search-box input.form-control:-moz-placeholder {
+    color: black;
+}
+div.search-box input.form-control::-moz-placeholder {
+    color: black;
+}
+div.search-box input.form-control:-ms-input-placeholder {
+    color: black;
+}
+
+h2#cute-words {
+  font-family: 'Allura', cursive;
+  text-align: center;
+  color: #333333;
+}
+
+img#main-logo {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row-header {
+   border-bottom: 1px solid #d6d6d6;
+   -webkit-box-shadow: 0px 10px 6px -10px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 10px 6px -10px rgba(0,0,0,0.75);
+   box-shadow: 0px 10px 6px -10px rgba(0,0,0,0.75);
+ }
+
+ul.nav-justified {
+  margin-top: 10px;
+}
+ul.nav-justified li {
+  white-space: nowrap;
+}
+
+ul.nav-justified li a {
+  color: black;
+}
+
+li.dropdown ul.dropdown-menu {
+  margin-top: 0;
+  border-radius: 0;
+}
+
+/* end of header */
+
+/* Jumbotron */
+.container div.jumbotron {
+  position: relative;
+  background-color: #cccccc;
+  background-image: url("../Assets/Baby Dean\'s Crib.jpg");
+  background-repeat: no-repeat;
+  background-position: right 250px top -220px;
+  border-radius: 0;
+  padding: 0;
+}
+.container div.jumbotron:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  border: 1px solid white
+}
+div.jumbotron div.container {
+  background-image:-webkit-radial-gradient(top right, ellipse farthest-corner, rgba(255,255,255,0) 50%, rgba(77,77,77,.4) 100%),
+  -webkit-radial-gradient(bottom right, ellipse farthest-corner, rgba(255,255,255,0) 80%, rgba(77,77,77,.2) 100%),
+  -webkit-radial-gradient(top left, ellipse farthest-corner, rgba(255,255,255,0) 80%, rgba(77,77,77,.2) 100%),
+  -webkit-radial-gradient(bottom right, ellipse farthest-corner, rgba(255,255,255,0) 30%, rgba(77,77,77,.2) 100%)
+}
+
+div.jumbo-header {
+  background-image:-webkit-linear-gradient(bottom, rgba(255,255,255,1) 20%, rgba(255,255,255,.5) 100%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+div.jumbo-header h1{
+  font-size: 55px;
+  color: #7494b7;
+}
+div.jumbo-header p {
+  font-size: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+p.baby-dean {
+  position:relative;
+  top: 375px;
+  font-size: 18px;
+  color: #ffffff;
+}
+/* End of Jumbotron*/
+
+/* Carousel */
+/* Carousel base class */
+.carousel {
+  height: 200px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 200px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 200px;
+}
+
+/* Featured Products */
+div.featured h1, div.featured p {
+  text-align: center;
+}
+div.featured button.btn-pink {
+  margin-left: auto;
+  margin-right: auto;
+}
+div.featured{
+  height: 100%;
+}
+div.featured div.img-container {
+  border: 1px solid #f1f1f1;
+  height: 240px;
+}
+/* End Featured Products */
+
+
+/* Welcome CSS */
+div.welcome div.col-md-12 p a.about-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+div.welcome p.welcome-signature {
+  float: right;
+}
+/* End Welcome CSS */
+
+/* Footer CSS */
+div.footer h3 {
+  color: #7494b7;
+}
+div.footer-nav ul {
+  padding-left: 0;
+}
+div.footer-nav ul li {
+  list-style: none;
+  padding-bottom: 1em;
+}
+div.footer ul li a {
+  color: black;
+}
+div.footer a img.footer-social-glyphicon {
+  margin-right: 5px;
+  margin-bottom: 50px;
+}
+div.email-box-double-border {
+
+  display: inline-block;
+  width:66%;
+  border: 1px solid #dbdbdb;
+}
+div.footer input.email-box {
+  border-radius: 0;
+  border: 1px solid #dbdbdb;
+  margin: 1px;
+  width: 98%;
+}
+div.footer button.btn-pink {
+  position:relative;
+  bottom:1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+div.footer-gradient {
+  height: 10px;
+  background-image: repeating-linear-gradient(90deg, #b8d1ed, #b8d1ed 5em,
+    #d5dc91 5em, #d5dc91 10em,
+    #ffefbc 10em, #ffefbc 15em,
+    #ffcccc 15em, #ffcccc 20em
+  );
+  margin-bottom: 10px;
+}
+
+div.bottom-footer p.footer-copyright a, div.bottom-footer p.footer-copyright {
+  color: #999999;
+}
+footer.wrapper {
+  background-image: -webkit-radial-gradient(center top, ellipse cover, rgba(242,242,242,1) 10%, rgba(255,255,255,.5) 75%);
+}
+footer hr {
+  margin-top: 0;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.2);
+}
+
+
+/* End Footer CSS */
