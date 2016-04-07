@@ -73,15 +73,16 @@ a#shopping-cart-icon {
   margin: 15px;
   float: right;
 }
-
-
 .navbar, .navbar-default {
   background-color: white;
   border: none;
   border-radius: 0;
   margin-bottom: 10px;
 }
-
+#mobile-nav-shell-xs li {
+  display: inline-block;
+  margin: 0 auto;
+}
 /* Search Box*/
 div.search-box {
   border: .5px solid white;
