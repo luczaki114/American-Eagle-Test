@@ -24,15 +24,16 @@
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav, #main-nav2" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+            <p class="navbar-text xs-inline-block">Call us at: <b>708-246-1212</b></p>
+            <a href="#" class="navbar-link visible-xs-inline-block"><img src="Assets/Shopping Cart.jpg" alt="Shopping Cart" /></a>
           </div>
           <div class="collapse navbar-collapse">
-            <p class="navbar-text">Call us at: <b>708-246-1212</b></p>
             <button type="button" class="btn btn-pink navbar-btn">LIVE CHAT NOW</button>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Baby Registry</a></li>
@@ -47,16 +48,16 @@
       <!-- Main section of header -->
       <div class="container-fluid">
         <div class="row row-header vcenter">
-          <div class="col-md-3 cute-words">
+          <div class="col-sm-3 cute-words hidden-xs">
             <h2 id="cute-words">
               Children. Our greatest earthly blessings.
             </h2>
           </div>
-          <div class="col-md-6 Logo">
-            <img src="Assets/Beautiful beginnings.jpg" alt="Logo" id="main-logo"/>
+          <div class="col-xs-12 col-sm-6 Logo">
+            <img src="Assets/Beautiful beginnings.jpg" alt="Logo" id="main-logo" class="img-responsive"/>
           </div>
-          <div class="col-md-3">
-            <div class="input-group search-box">
+          <div class="col-sm-3 collapse navbar-collapse" id="main-nav2">
+            <div class="input-group search-box" >
               <input type="text" class="form-control" placeholder="Search this site...">
               <span class="input-group-btn">
                 <button class="btn btn-default" type="button">
@@ -70,8 +71,11 @@
       </div><!-- /.container-fluid -->
       <!-- End of Main Section -->
 
+
+
+
       <!-- Main Nav -->
-      <nav>
+      <nav class="collapse navbar-collapse" id="main-nav">
         <ul class="nav nav-justified">
           <li><a href="#">BABY APPAREL</a></li>
           <li><a href="#">BABY GIFTS</a></li>

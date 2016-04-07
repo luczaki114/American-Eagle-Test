@@ -37,6 +37,9 @@ button.btn-pink:before {
 }
 
 /* Body & Utility */
+.xs-inline-block {
+  display: inline-block;
+}
 body {
   background-image:url("../Assets/dots.jpg");
   background-image:-webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0), rgba(255,255,255,1)),
@@ -45,7 +48,6 @@ body {
 html, body, .container,{
   height: 100%;
 }
-
 body .wrapper {
   background-color: white;
   border-left: 1px #d6d6d6 solid;
@@ -68,7 +70,10 @@ div.vcenter {
     #ffcccc 15em, #ffcccc 20em
   );
 }
-
+a.navbar-link.visible-xs-inline-block {
+  margin: 15px;
+  float: right;
+}
 .double-border{
   border-color: grey;
   border-radius: 0;
@@ -85,7 +90,6 @@ div.navbar-collapse button.btn div#live-chat-btn {
 .navbar, .navbar-default {
   background-color: white;
   border: none;
-  border-bottom: 1px #d6d6d6 solid;
   border-radius: 0;
   margin-bottom: 10px;
 }
@@ -327,3 +331,13 @@ footer hr {
 
 
 /* End Footer CSS */
+
+@media (min-width: 768px) {
+  /* Utility */
+
+  /* Navbar */
+  .navbar, .navbar-default {
+    border-bottom: 1px #d6d6d6 solid;
+  }
+
+}
