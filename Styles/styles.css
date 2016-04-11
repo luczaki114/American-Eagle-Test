@@ -52,12 +52,15 @@ body {
 html, body, .container,{
   height: 100%;
 }
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 body .wrapper {
   background-color: white;
   border-left: 1px #d6d6d6 solid;
   border-right: 1px #d6d6d6 solid;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 div.vcenter {
     display: flex;
@@ -246,18 +249,29 @@ div.footer-nav ul {
   padding-left: 0;
 }
 div.footer-nav ul li {
-  list-style: none;
   padding-bottom: 1em;
 }
-div.footer ul li a {
+div.footer-nav ul.nav li a {
   color: black;
 }
-div.footer a img.footer-social-glyphicon {
-  margin-right: 5px;
-  margin-bottom: 50px;
+div.footer-nav nav.navbar {
+  margin-bottom: 0;
+  background-color: rgba(0,0,0,0);
+}
+div.footer-nav nav.navbar button {
+  border: none;
+}
+div.footer-nav nav.navbar button span {
+  color: #85a1bf;
+}
+div.footer ul.nav-justified li {
+  display: inline-block;
+  width: 18%;
+}
+div.footer ul.nav-justified>li>a {
+  padding: 0;
 }
 div.email-box-double-border {
-
   display: inline-block;
   width:66%;
   border: 1px solid #dbdbdb;
@@ -266,13 +280,13 @@ div.footer input.email-box {
   border-radius: 0;
   border: 1px solid #dbdbdb;
   margin: 1px;
-  width: 98%;
+  width: 99%;
 }
 div.footer button.btn-pink {
-  position:relative;
-  bottom:1px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  width: 30%;
+  top: -1px;
+  padding-top: 10px;
+  padding-bottom: 11px;
 }
 div.footer-gradient {
   height: 10px;
@@ -282,6 +296,7 @@ div.footer-gradient {
     #ffcccc 15em, #ffcccc 20em
   );
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 div.bottom-footer p.footer-copyright a, div.bottom-footer p.footer-copyright {
@@ -292,6 +307,7 @@ footer.wrapper {
 }
 footer hr {
   margin-top: 0;
+  margin-bottom: 0;
   -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.2);
@@ -301,10 +317,20 @@ footer hr {
 }
 
 /* End Footer CSS */
+/* END of Mobile CSS < 768px */
 
+
+
+
+/* Media Query > 768px */
 @media (min-width: 768px) {
   /* Utility */
 
+
+  body.wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   /* Navbar */
   .navbar, .navbar-default {
     border-bottom: 1px #d6d6d6 solid;
@@ -343,5 +369,33 @@ footer hr {
   /* Featured Products */
   div.featured-product {
     margin: 0;
+  }
+
+  /* Footer */
+  div.footer-nav nav.navbar {
+    border-bottom: none;
+  }
+  div.footer-nav div.collapse {
+    padding-left:0px;
+  }
+  div.footer-nav ul li {
+    padding: 0;
+  }
+  div.footer-nav ul a {
+    padding-left: 0px;
+  }
+
+
+  div.footer-nav .nav-justified {
+    margin-bottom: 50px;
+  }
+  div.footer-nav .nav-justified>li {
+  width: 18%;
+  }
+  div.footer input.email-box {
+    width: 98%;
+  }
+  div.footer-gradient {
+    margin-top: 0px
   }
 }

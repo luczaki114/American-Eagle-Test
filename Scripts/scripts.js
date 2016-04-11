@@ -11,11 +11,15 @@ $(document).ready (function () {
   prependPlacer($("#login-register"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
   prependPlacer($("#baby-registry"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
   prependPlacer($(".jumbo-header"), $("#jumbo-header-shell-sm"), $("#jumbo-header-shell-xs"));
+  prependPlacer($("#copyright-img-logo"), $("#copyright-shell-right"), $("#copyright-shell-left"));
+  prependPlacer($("#copyright-text"), $("#copyright-shell-left"), $("#copyright-shell-right"));
 
   $(window).resize(function() {
     prependPlacer($(".search-box"), $("#search-box-shell-sm"), $(".search-box-shell-xs"));
     prependPlacer($("#login-register"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
     prependPlacer($("#baby-registry"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
     prependPlacer($(".jumbo-header"), $("#jumbo-header-shell-sm"), $("#jumbo-header-shell-xs"));
+    prependPlacer($("#copyright-img-logo"), $("#copyright-shell-right"), $("#copyright-shell-left"));
+    prependPlacer($("#copyright-text"), $("#copyright-shell-left"), $("#copyright-shell-right"));
   });
 });
