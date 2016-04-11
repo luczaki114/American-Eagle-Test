@@ -76,13 +76,28 @@ a#shopping-cart-icon {
 .navbar, .navbar-default {
   background-color: white;
   border: none;
+  border-bottom: 1px solid #cccccc;
   border-radius: 0;
   margin-bottom: 10px;
 }
 #mobile-nav-shell-xs li {
   display: inline-block;
-  margin: 0 auto;
+  width: 50%;
+  text-align: center;
 }
+#main-nav li:first-child {
+  border-top: 1px solid #cccccc;
+}
+#main-nav li {
+  border-bottom: 1px solid #cccccc;
+}
+#main-nav li:last-child {
+  border-bottom: 2px solid #cccccc;
+}
+#main-nav li a {
+  margin-bottom: 0;
+}
+
 /* Search Box*/
 div.search-box {
   border: .5px solid white;
@@ -156,15 +171,14 @@ li.dropdown ul.dropdown-menu {
 
 /* Jumbotron */
 .container div.jumbotron {
+  min-height: 250px;
   position: relative;
   background-color: #cccccc;
   background-image: url("../Assets/Baby Dean\'s Crib.jpg");
-  background-repeat: no-repeat;
-  background-position: right 250px top -220px;
   border-radius: 0;
   padding: 0;
 }
-.container div.jumbotron:before {
+.container div.jumbotron:after {
   content: "";
   position: absolute;
   top: 15px;
@@ -179,28 +193,13 @@ div.jumbotron div.container {
   -webkit-radial-gradient(top left, ellipse farthest-corner, rgba(255,255,255,0) 80%, rgba(77,77,77,.2) 100%),
   -webkit-radial-gradient(bottom right, ellipse farthest-corner, rgba(255,255,255,0) 30%, rgba(77,77,77,.2) 100%)
 }
-
-div.jumbo-header {
-  background-image:-webkit-linear-gradient(bottom, rgba(255,255,255,1) 20%, rgba(255,255,255,.5) 100%);
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 div.jumbo-header h1{
-  font-size: 55px;
   color: #7494b7;
 }
 div.jumbo-header p {
   font-size: 24px;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
-p.baby-dean {
-  position:relative;
-  top: 375px;
-  font-size: 18px;
-  color: #ffffff;
-}
 /* End of Jumbotron*/
 
 /* Carousel */
@@ -314,7 +313,9 @@ footer hr {
   -moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.2);
 }
-
+.footer-copyright {
+  text-align: justify;
+}
 
 /* End Footer CSS */
 
@@ -325,5 +326,34 @@ footer hr {
   .navbar, .navbar-default {
     border-bottom: 1px #d6d6d6 solid;
   }
+  #main-nav li:first-child {
+    border-top: none;
+  }
+  #main-nav li:last-child {
+    border-bottom: 1px solid #cccccc;
+  }
 
+ /* Jumbotron & jumbo-header*/
+  .container div.jumbotron {
+    background-repeat: no-repeat;
+    background-position: right 250px top -220px;
+  }
+  div.jumbo-header {
+    background-image:-webkit-linear-gradient(bottom, rgba(255,255,255,1) 20%, rgba(255,255,255,.5) 100%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  p.baby-dean {
+    position:relative;
+    top: 375px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  div.jumbo-header p {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  div.jumbo-header h1{
+    font-size: 55px;
+  }
 }
