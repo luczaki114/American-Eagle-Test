@@ -5,6 +5,9 @@ h1, h2, h3, h4, h5, h6 , p, li a, li {
 h1, h2, h3, h4, h5, h6 {
   color: #7494b7;
 }
+h2 {
+  font-size: 32px;
+}
 button{
   font-family: Georgia;
   font-weight: bold;
@@ -19,6 +22,7 @@ p.signature {
 
 /* Buttons */
 button.btn-pink {
+  font-size: 11px;
   color: #666666;
   border-radius: 0;
   border: 1px solid #dbdbdb;
@@ -202,44 +206,23 @@ div.jumbo-header p {
 
 /* End of Jumbotron*/
 
-/* Carousel */
-/* Carousel base class */
-.carousel {
-  height: 200px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 200px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 200px;
-}
-
 /* Featured Products */
-div.featured h1, div.featured p {
+div.featured h2, div.featured p {
   text-align: center;
 }
 div.featured button.btn-pink {
   margin-left: auto;
   margin-right: auto;
 }
-div.featured{
-  height: 100%;
+div.featured div.col-sm-3:first-child {
+  margin-top: 32px;
 }
 div.featured div.img-container {
   border: 1px solid #f1f1f1;
   height: 240px;
+}
+div.featured-product {
+  margin: 5% 10% 0% 10%;
 }
 /* End Featured Products */
 
@@ -355,5 +338,10 @@ footer hr {
   }
   div.jumbo-header h1{
     font-size: 55px;
+  }
+
+  /* Featured Products */
+  div.featured-product {
+    margin: 0;
   }
 }
