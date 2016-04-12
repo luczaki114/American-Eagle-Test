@@ -177,16 +177,14 @@ li.dropdown ul.dropdown-menu {
 
 /* end of header */
 
-/* Jumbotron */
-.container div.jumbotron {
-  min-height: 250px;
+/* Carousel & Jumbo Header */
+div.carousel {
+  height: 250px;
   position: relative;
-  background-color: #cccccc;
-  background-image: url("../Assets/Baby Dean\'s Crib.jpg");
-  border-radius: 0;
-  padding: 0;
+  overflow:hidden;
 }
-.container div.jumbotron:after {
+div.carousel:before{
+  z-index: 4;
   content: "";
   position: absolute;
   top: 15px;
@@ -195,11 +193,14 @@ li.dropdown ul.dropdown-menu {
   left: 15px;
   border: 1px solid white
 }
-div.jumbotron div.container {
-  background-image:-webkit-radial-gradient(top right, ellipse farthest-corner, rgba(255,255,255,0) 50%, rgba(77,77,77,.4) 100%),
-  -webkit-radial-gradient(bottom right, ellipse farthest-corner, rgba(255,255,255,0) 80%, rgba(77,77,77,.2) 100%),
-  -webkit-radial-gradient(top left, ellipse farthest-corner, rgba(255,255,255,0) 80%, rgba(77,77,77,.2) 100%),
-  -webkit-radial-gradient(bottom right, ellipse farthest-corner, rgba(255,255,255,0) 30%, rgba(77,77,77,.2) 100%)
+a.right, a.left, ol.carousel-indicators {
+  z-index: 5;
+}
+div.carousel img#carousel-img-1 {
+  position: relative;
+  max-width: 120%;
+  top: -50px;
+  right: 60px;
 }
 div.jumbo-header h1{
   color: #7494b7;
@@ -208,7 +209,7 @@ div.jumbo-header p {
   font-size: 24px;
 }
 
-/* End of Jumbotron*/
+/* End of Carousel & Jumbo Header*/
 
 /* Featured Products */
 div.featured h2, div.featured p {
@@ -348,19 +349,50 @@ footer hr {
     border-bottom: 1px solid #cccccc;
   }
 
- /* Jumbotron & jumbo-header*/
-  .container div.jumbotron {
-    background-repeat: no-repeat;
-    background-position: right 250px top -220px;
+/* Carousel & Jumbo-header*/
+  div.carousel-jumbo-container {
+    position:relative;
+    height: 450px;
+  }
+  div.carousel-text-overlay, div.carousel {
+    position:absolute;
+    width: 100%;
+    height: 450px;
+    top: 0;
+    left: 0;
+  }
+  div.carousel-text-overlay{
+    z-index: 4;
+    background-image:-webkit-radial-gradient(top right, ellipse farthest-corner, rgba(255,255,255,0) 50%, rgba(77,77,77,.4) 100%),
+    -webkit-radial-gradient(bottom right, ellipse farthest-corner, rgba(255,255,255,0) 80%, rgba(77,77,77,.2) 100%),
+    -webkit-radial-gradient(top left, ellipse farthest-corner, rgba(255,255,255,0) 80%, rgba(77,77,77,.2) 100%),
+    -webkit-radial-gradient(bottom right, ellipse farthest-corner, rgba(255,255,255,0) 30%, rgba(77,77,77,.2) 100%);
+  }
+  div.carousel img#carousel-img-1, div.carousel img#carousel-img-2 {
+    width: 100%;
+  }
+  div.carousel img#carousel-img-1 {
+    top: -130px;
+    right: 7.2%;
+  }
+  a.right, a.left {
+    width: 8%;
+  }
+  div.carousel a.right span {
+    right: 30px;
+  }
+  div.carousel a.left span {
+    left: 30px;
   }
   div.jumbo-header {
     background-image:-webkit-linear-gradient(bottom, rgba(255,255,255,1) 20%, rgba(255,255,255,.5) 100%);
+    height:450px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
   p.baby-dean {
     position:relative;
-    top: 375px;
+    top: 400px;
     font-size: 18px;
     color: #ffffff;
   }
@@ -369,7 +401,7 @@ footer hr {
     padding-right: 40px;
   }
   div.jumbo-header h1{
-    font-size: 55px;
+    font-size: 60px;
   }
 
   /* Featured Products */
@@ -386,6 +418,9 @@ footer hr {
   }
   div.footer-nav ul li {
     padding: 0;
+  }
+  div.footer-nav ul li:first-child a {
+    padding-top: 0;
   }
   div.footer-nav ul a {
     padding-left: 0px;
