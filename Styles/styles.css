@@ -338,17 +338,29 @@ footer hr {
     padding-left: 30px;
     padding-right: 30px;
   }
+  div.row-divider {
+    position: relative;
+    z-index: 1;
+  }
   /* Navbar */
   .navbar, .navbar-default {
     border-bottom: 1px #d6d6d6 solid;
+  }
+  ul.nav.nav-justified {
+    margin-top: 0;
   }
   #main-nav li:first-child {
     border-top: none;
   }
   #main-nav li:last-child {
-    border-bottom: 1px solid #cccccc;
+    border-bottom: none;
   }
-
+  #main-nav li {
+    border-bottom: none;
+  }
+  #main-nav li a {
+    text-align: center;
+  }
 /* Carousel & Jumbo-header*/
   div.carousel-jumbo-container {
     position:relative;

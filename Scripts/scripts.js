@@ -4,22 +4,35 @@ var prependPlacer = function (element, greaterthan, lessthan) {
   (width > 768) ? greaterthan.prepend(element) : lessthan.prepend(element);
 }
 
-
-
 $(document).ready (function () {
-  prependPlacer($(".search-box"), $("#search-box-shell-sm"), $(".search-box-shell-xs"));
-  prependPlacer($("#login-register"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
-  prependPlacer($("#baby-registry"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
-  prependPlacer($(".jumbo-header"), $("#jumbo-header-shell-sm"), $("#jumbo-header-shell-xs"));
-  prependPlacer($("#copyright-img-logo"), $("#copyright-shell-right"), $("#copyright-shell-left"));
-  prependPlacer($("#copyright-text"), $("#copyright-shell-left"), $("#copyright-shell-right"));
+  var searchBox = $(".search-box"),
+  searchBoxShellSm = $("#search-box-shell-sm"),
+  searchBoxShellXs = $(".search-box-shell-xs"),
+  loginRegister = $("#login-register"),
+  babyRegistry = $("#baby-registry")
+  mobileNavShellSm = $("#mobile-nav-shell-sm"),
+  mobileNavShellXs = $("#mobile-nav-shell-xs"),
+  jumboHeader = $(".jumbo-header"),
+  jumboHeaderShellSm = $("#jumbo-header-shell-sm"),
+  jumboHeaderShellXs = $("#jumbo-header-shell-xs"),
+  copyrightImgLogo = $("#copyright-img-logo"),
+  copyrightText = $("#copyright-text"),
+  copyrightShellRight = $("#copyright-shell-right"),
+  copyrightShellLeft = $("#copyright-shell-left");
+
+  prependPlacer(searchBox, searchBoxShellSm , searchBoxShellXs);
+  prependPlacer(loginRegister, mobileNavShellSm, mobileNavShellXs);
+  prependPlacer(babyRegistry, mobileNavShellSm, mobileNavShellXs);
+  prependPlacer(jumboHeader, jumboHeaderShellSm, jumboHeaderShellXs);
+  prependPlacer(copyrightImgLogo, copyrightShellRight, copyrightShellLeft);
+  prependPlacer(copyrightText, copyrightShellLeft, copyrightShellRight);
 
   $(window).resize(function() {
-    prependPlacer($(".search-box"), $("#search-box-shell-sm"), $(".search-box-shell-xs"));
-    prependPlacer($("#login-register"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
-    prependPlacer($("#baby-registry"), $("#mobile-nav-shell-sm"), $("#mobile-nav-shell-xs"));
-    prependPlacer($(".jumbo-header"), $("#jumbo-header-shell-sm"), $("#jumbo-header-shell-xs"));
-    prependPlacer($("#copyright-img-logo"), $("#copyright-shell-right"), $("#copyright-shell-left"));
-    prependPlacer($("#copyright-text"), $("#copyright-shell-left"), $("#copyright-shell-right"));
+    prependPlacer(searchBox, searchBoxShellSm , searchBoxShellXs);
+    prependPlacer(loginRegister, mobileNavShellSm, mobileNavShellXs);
+    prependPlacer(babyRegistry, mobileNavShellSm, mobileNavShellXs);
+    prependPlacer(jumboHeader, jumboHeaderShellSm, jumboHeaderShellXs);
+    prependPlacer(copyrightImgLogo, copyrightShellRight, copyrightShellLeft);
+    prependPlacer(copyrightText, copyrightShellLeft, copyrightShellRight);
   });
 });
