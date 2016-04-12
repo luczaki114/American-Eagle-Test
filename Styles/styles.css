@@ -103,6 +103,7 @@ a#shopping-cart-icon {
 }
 #main-nav li a {
   margin-bottom: 0;
+  text-align: left;
 }
 
 /* Search Box*/
@@ -253,6 +254,7 @@ div.footer-nav ul li {
 }
 div.footer-nav ul.nav li a {
   color: black;
+  white-space: nowrap;
 }
 div.footer-nav nav.navbar {
   margin-bottom: 0;
@@ -313,7 +315,11 @@ footer hr {
   box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.2);
 }
 .footer-copyright {
-  text-align: justify;
+  text-align: center;
+}
+.footer-copyright:last-child {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* End Footer CSS */
