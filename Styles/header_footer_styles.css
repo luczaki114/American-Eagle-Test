@@ -1,0 +1,327 @@
+/* Typography */
+h1, h2, h3, h4, h5, h6 , p, li a, li {
+  font-family: Georgia;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #7494b7;
+}
+h2 {
+  font-size: 32px;
+}
+button{
+  font-family: Georgia;
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+p.signature {
+  font-family: 'Alex Brush', cursive;
+  font-size: 24px;
+}
+
+/* Buttons */
+button.btn-pink {
+  font-size: 11px;
+  color: #666666;
+  border-radius: 0;
+  border: 1px solid #dbdbdb;
+  background: white;
+  background-image: -webkit-linear-gradient(90deg, #ffe5e5, white) ;
+  position: relative;
+}
+button.btn-pink:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border: 1px solid #dbdbdb;
+}
+
+
+/* Mobile CSS < 768px */
+/* Body & Utility */
+.xs-inline-block {
+  display: inline-block;
+}
+body {
+  background-image:url("../Assets/dots.jpg");
+  background-image:-webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0), rgba(255,255,255,1)),
+  url("../Assets/dots.jpg");
+}
+html, body, .container,{
+  height: 100%;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body .wrapper {
+  background-color: white;
+  border-left: 1px #d6d6d6 solid;
+  border-right: 1px #d6d6d6 solid;
+}
+div.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+/* header and navigation */
+.color-gradient {
+  height: 10px;
+  background-image: repeating-linear-gradient(90deg, #b8d1ed, #b8d1ed 5em,
+    #d5dc91 5em, #d5dc91 10em,
+    #ffefbc 10em, #ffefbc 15em,
+    #ffcccc 15em, #ffcccc 20em
+  );
+}
+a#shopping-cart-icon {
+  margin: 15px;
+  float: right;
+}
+.navbar, .navbar-default {
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+#mobile-nav-shell-xs li {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+#main-nav li:first-child {
+  border-top: 1px solid #cccccc;
+}
+#main-nav li {
+  border-bottom: 1px solid #cccccc;
+}
+#main-nav li:last-child {
+  border-bottom: 2px solid #cccccc;
+}
+#main-nav li a {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* Search Box*/
+div.search-box {
+  border: .5px solid white;
+  outline: .5px solid #f0f0f0;
+}
+
+div.search-box input.form-control,
+div.search-box span.input-group-btn button.btn {
+  border-radius: 0;
+  background: linear-gradient(0deg, white, #d6d6d6);
+  color: black;
+}
+div.search-box input.form-control {
+  border: 1px #d6d6d6 solid;
+  border-right: none;
+
+}
+div.search-box span.input-group-btn button.btn {
+  border: 1px #d6d6d6 solid;
+  border-left: none;
+}
+
+/* input.form-control placeholder */
+div.search-box input.form-control::-webkit-input-placeholder {
+    color: black;
+}
+div.search-box input.form-control:-moz-placeholder {
+    color: black;
+}
+div.search-box input.form-control::-moz-placeholder {
+    color: black;
+}
+div.search-box input.form-control:-ms-input-placeholder {
+    color: black;
+}
+
+h2#cute-words {
+  font-family: 'Allura', cursive;
+  text-align: center;
+  color: #333333;
+}
+
+img#main-logo {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row-divider {
+   border-bottom: 1px solid #d6d6d6;
+   -webkit-box-shadow: 0px 10px 6px -10px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 10px 6px -10px rgba(0,0,0,0.75);
+   box-shadow: 0px 10px 6px -10px rgba(0,0,0,0.75);
+ }
+
+ul.nav-justified {
+  margin-top: 10px;
+}
+ul.nav-justified li {
+  white-space: nowrap;
+}
+ul.nav-justified li a {
+  color: black;
+}
+
+li.dropdown ul.dropdown-menu {
+  margin-top: 0;
+  border-radius: 0;
+}
+
+/* end of header */
+
+/* Footer CSS */
+div.footer h3 {
+  color: #7494b7;
+}
+div.footer-nav ul {
+  padding-left: 0;
+}
+div.footer-nav ul li {
+  padding-bottom: 1em;
+}
+div.footer-nav ul.nav li a {
+  color: black;
+  white-space: nowrap;
+}
+div.footer-nav nav.navbar {
+  margin-bottom: 0;
+  background-color: rgba(0,0,0,0);
+}
+div.footer-nav nav.navbar button {
+  border: none;
+}
+div.footer-nav nav.navbar button span {
+  color: #85a1bf;
+}
+div.footer ul.nav-justified li {
+  display: inline-block;
+  width: 18%;
+}
+div.footer ul.nav-justified>li>a {
+  padding: 0;
+}
+div.email-box-double-border {
+  display: inline-block;
+  width:66%;
+  border: 1px solid #dbdbdb;
+}
+div.footer input.email-box {
+  border-radius: 0;
+  border: 1px solid #dbdbdb;
+  margin: 1px;
+  width: 99%;
+}
+div.footer button.btn-pink {
+  width: 30%;
+  top: -1px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+div.footer-gradient {
+  height: 10px;
+  background-image: repeating-linear-gradient(90deg, #b8d1ed, #b8d1ed 5em,
+    #d5dc91 5em, #d5dc91 10em,
+    #ffefbc 10em, #ffefbc 15em,
+    #ffcccc 15em, #ffcccc 20em
+  );
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+div.bottom-footer p.footer-copyright a, div.bottom-footer p.footer-copyright {
+  color: #999999;
+}
+footer.wrapper {
+  background-image: -webkit-radial-gradient(center top, ellipse cover, rgba(242,242,242,1) 10%, rgba(255,255,255,.5) 75%);
+}
+footer hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.2);
+}
+.footer-copyright {
+  text-align: center;
+}
+.footer-copyright:last-child {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* End Footer CSS */
+/* END of Mobile CSS < 768px */
+
+/* Media Query > 768px */
+@media (min-width: 768px) {
+  /* Utility */
+
+
+  body.wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  div.row-divider {
+    position: relative;
+    z-index: 1;
+  }
+  /* Navbar */
+  .navbar, .navbar-default {
+    border-bottom: 1px #d6d6d6 solid;
+  }
+  ul.nav.nav-justified {
+    margin-top: 0;
+  }
+  #main-nav li:first-child {
+    border-top: none;
+  }
+  #main-nav li:last-child {
+    border-bottom: none;
+  }
+  #main-nav li {
+    border-bottom: none;
+  }
+  #main-nav li a {
+    text-align: center;
+  }
+
+  /* Footer */
+  div.footer-nav nav.navbar {
+    border-bottom: none;
+  }
+  div.footer-nav div.collapse {
+    padding-left:0px;
+  }
+  div.footer-nav ul li {
+    padding: 0;
+  }
+  div.footer-nav ul li:first-child a {
+    padding-top: 0;
+  }
+  div.footer-nav ul a {
+    padding-left: 0px;
+  }
+
+
+  div.footer-nav .nav-justified {
+    margin-bottom: 50px;
+  }
+  div.footer-nav .nav-justified>li {
+  width: 18%;
+  }
+  div.footer input.email-box {
+    width: 98%;
+  }
+  div.footer-gradient {
+    margin-top: 0px
+  }
+}
