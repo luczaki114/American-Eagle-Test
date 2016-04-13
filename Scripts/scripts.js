@@ -12,9 +12,6 @@ $(document).ready (function () {
   babyRegistry = $("#baby-registry")
   mobileNavShellSm = $("#mobile-nav-shell-sm"),
   mobileNavShellXs = $("#mobile-nav-shell-xs"),
-  jumboHeader = $(".jumbo-header"),
-  jumboHeaderShellSm = $("#jumbo-header-shell-sm"),
-  jumboHeaderShellXs = $("#jumbo-header-shell-xs"),
   copyrightImgLogo = $("#copyright-img-logo"),
   copyrightText = $("#copyright-text"),
   copyrightShellRight = $("#copyright-shell-right"),
@@ -23,7 +20,6 @@ $(document).ready (function () {
   prependPlacer(searchBox, searchBoxShellSm , searchBoxShellXs);
   prependPlacer(loginRegister, mobileNavShellSm, mobileNavShellXs);
   prependPlacer(babyRegistry, mobileNavShellSm, mobileNavShellXs);
-  prependPlacer(jumboHeader, jumboHeaderShellSm, jumboHeaderShellXs);
   prependPlacer(copyrightImgLogo, copyrightShellRight, copyrightShellLeft);
   prependPlacer(copyrightText, copyrightShellLeft, copyrightShellRight);
 
@@ -31,7 +27,6 @@ $(document).ready (function () {
     prependPlacer(searchBox, searchBoxShellSm , searchBoxShellXs);
     prependPlacer(loginRegister, mobileNavShellSm, mobileNavShellXs);
     prependPlacer(babyRegistry, mobileNavShellSm, mobileNavShellXs);
-    prependPlacer(jumboHeader, jumboHeaderShellSm, jumboHeaderShellXs);
     prependPlacer(copyrightImgLogo, copyrightShellRight, copyrightShellLeft);
     prependPlacer(copyrightText, copyrightShellLeft, copyrightShellRight);
   });
