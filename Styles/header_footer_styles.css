@@ -161,13 +161,6 @@ img#main-logo {
   -moz-box-shadow: 0px 10px 6px -10px rgba(0,0,0,0.75);
   box-shadow: 0px 10px 6px -10px rgba(0,0,0,0.75);
 }
-.row-divider-top {
-  border-top: 1px solid #d6d6d6;
-  -webkit-box-shadow: 0px -10px 6px -10px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px -10px 6px -10px rgba(0,0,0,0.75);
-  box-shadow: 0px -10px 6px -10px rgba(0,0,0,0.75);
-}
-
 
 ul.nav-justified {
   margin-top: 10px;
@@ -300,6 +293,16 @@ footer hr {
   #main-nav li a {
     text-align: center;
   }
+  #main-nav li a:hover {
+    background-color: rgba(175,175,175, .2);
+  }
+  .row-divider-top {
+    border-top: 1px solid #d6d6d6;
+    -webkit-box-shadow: 0px -10px 6px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -10px 6px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px -10px 6px -10px rgba(0,0,0,0.75);
+  }
+
 
   /* Footer */
   div.footer-nav nav.navbar {
