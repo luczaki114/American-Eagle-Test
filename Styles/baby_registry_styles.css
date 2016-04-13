@@ -1,16 +1,45 @@
 /* Mobile CSS < 768px */
-  .col-sm-6 {
-    padding: 0 25px;
-  }
+h1, h2, p {
+  text-align: center;
+}
+
+
+/* col-2-layout */
+.sidebar, .main-content {
+  padding: 0 25px;
+}
+hr {
+  margin: 10px 0;
+}
+div.double-border {
+  border: 1px solid white;
+  outline: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+}
+form input.form-control {
+  border-radius: 0;
+  border: 1px solid #dbdbdb;
+}
+
+
 /* END of Mobile CSS < 768px */
 
 /* Media Query > 768px */
 @media (min-width: 768px) {
-  /* 2-column */
-  .row .col-sm-6:first-child {
-    padding-left: 20px;
+  h1, h2 {
+    text-align: left;
   }
-  .row .col-sm-6:last-child {
-    padding-right: 20px;
+  /* 2-column */
+  .form-container {
+    position: relative;
+  }
+  .form-container button.btn-pink {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 9px 12px;
+  }
+  .form-container:last-child {
+    margin-bottom: 20px;
   }
 }

@@ -46,7 +46,7 @@
 
       <!-- Main section of header -->
       <div class="container-fluid">
-        <div class="row row-divider vcenter">
+        <div class="row row-divider-bottom vcenter">
           <div class="col-sm-3 cute-words hidden-xs">
             <h2 id="cute-words">
               Children. Our greatest earthly blessings.
@@ -111,22 +111,54 @@
     <!-- Main Content -->
     <!-- ____________ -->
 
-    <!-- 2-column -->
-    <main class="container wrapper 2-column">
-      <div class="row">
-        <div class="col-sm-6">
-          <h1>h1</h1>
-          <p>
-          Single-origin coffee banh mi gluten-free salvia man braid. Twee green juice flexitarian four loko, seitan meh shoreditch next level keytar normcore. Gentrify roof party mustache franzen XOXO, yr YOLO sriracha poutine. Neutra chicharrones ethical, heirloom wayfarers fixie austin keytar locavore occupy franzen deep v selvage ugh. Sriracha marfa lomo blog pitchfork schlitz dreamcatcher stumptown meggings, aesthetic gastropub biodiesel occupy. Tilde hashtag before they sold out next level, try-hard cray photo booth hoodie fap. Keytar normcore fixie XOXO small batch, bushwick vice plaid franzen artisan selvage aesthetic sriracha.
-          </p>
-        </div>
-        <div class="col-sm-6">
-          <h1>h1</h1>
-          <p>
-          Single-origin coffee banh mi gluten-free salvia man braid. Twee green juice flexitarian four loko, seitan meh shoreditch next level keytar normcore. Gentrify roof party mustache franzen XOXO, yr YOLO sriracha poutine. Neutra chicharrones ethical, heirloom wayfarers fixie austin keytar locavore occupy franzen deep v selvage ugh. Sriracha marfa lomo blog pitchfork schlitz dreamcatcher stumptown meggings, aesthetic gastropub biodiesel occupy. Tilde hashtag before they sold out next level, try-hard cray photo booth hoodie fap. Keytar normcore fixie XOXO small batch, bushwick vice plaid franzen artisan selvage aesthetic sriracha.
-          </p>
-        </div>
-      </div>
+    <!-- col-2-layout -->
+    <main class="container wrapper col-2-layout">
+      <div class="container-fluid">
+        <div class="row row-divider-top">
+          <div class="col-sm-4 sidebar">
+            <div class="form-container">
+              <h2>Find a Registry</h2>
+              <form action="index.html" method="post">
+                <div class="double-border">
+                  <input type="text" class="form-control" placeholder="Last Name (required)">
+                </div>
+                <div class="double-border">
+                  <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <button class="btn btn-pink center-block" type="submit" name="button">FIND</button>
+              </form>
+            </div>
+            <hr>
+            <div class="form-container">
+              <h2>Create a Registry</h2>
+              <button class="btn btn-pink center-block" type="button" name="button">CREATE</button>
+            </div>
+            <hr>
+            <div class="form-container">
+              <h2>Manage a Registry</h2>
+              <form action="index.html" method="post">
+                <div class="double-border">
+                  <input type="text" class="form-control" placeholder="Email (required)">
+                </div>
+                <div class="double-border">
+                  <input type="password" class="form-control" placeholder="Password (required)">
+                </div>
+                <button class="btn btn-pink center-block" type="submit" name="button">LOGIN</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-sm-8 main-content">
+            <h1>Baby Registry</h1>
+            <p>
+              Bespoke fanny pack schlitz etsy. Sustainable pitchfork keffiyeh, fanny pack letterpress neutra direct trade master cleanse distillery schlitz williamsburg. Gastropub cornhole waistcoat, authentic squid typewriter brooklyn art party aesthetic food truck umami banjo you probably haven't heard of them. Raw denim aesthetic chillwave jean shorts. Pour-over occupy health goth celiac, lo-fi YOLO twee pop-up before they sold out marfa wolf slow-carb microdosing. Hoodie chicharrones tote bag, everyday carry truffaut single-origin coffee mixtape hella viral ennui ugh schlitz. Intelligentsia ramps put a bird on it, taxidermy thundercats franzen skateboard ugh fingerstache blue bottle meditation typewriter cliche tofu.
+            </p>
+            <p>
+              Irony thundercats aesthetic chartreuse knausgaard, roof party artisan stumptown chambray letterpress truffaut kombucha listicle XOXO. Humblebrag fixie intelligentsia gluten-free listicle. Cronut kombucha kale chips shabby chic vegan. Williamsburg pabst cold-pressed banjo, selfies selvage forage heirloom food truck franzen. Organic gochujang hella slow-carb. Whatever stumptown austin normcore cold-pressed, four loko try-hard sustainable asymmetrical pinterest brooklyn next level retro flannel ethical. Yuccie pinterest umami, blue bottle vegan narwhal wolf.
+            </p>
+          </div>
+        </div><!--/.row -->
+      </div><!--/.container-fluid -->
     </main><!--/.container wrapper -->
     <!-- ___________________ -->
     <!-- End of Main Content -->
@@ -152,7 +184,7 @@
               <div class="collapse navbar-collapse" id="about-nav">
                 <ul class="nav navbar-nav">
                   <li><a href="#">OUR STORY</a></li>
-                  <li><a href="#">BABY REGISTRY</a></li>
+                  <li><a href="baby_registry.html">BABY REGISTRY</a></li>
                   <li><a href="#">STORE LOCATION</a></li>
                   <li><a href="#">TESTIMONIALS</a></li>
                 </ul>
