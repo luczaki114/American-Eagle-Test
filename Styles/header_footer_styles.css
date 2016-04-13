@@ -171,7 +171,6 @@ ul.nav-justified li {
 ul.nav-justified li a {
   color: black;
 }
-
 li.dropdown ul.dropdown-menu {
   margin-top: 0;
   border-radius: 0;
@@ -265,14 +264,9 @@ footer hr {
 @media (min-width: 768px) {
   /* Utility */
 
-
   body.wrapper {
     padding-left: 30px;
     padding-right: 30px;
-  }
-  div.row-divider {
-    position: relative;
-    z-index: 1;
   }
   /* Navbar */
   .navbar, .navbar-default {

@@ -1,9 +1,12 @@
 /* Mobile CSS < 768px */
 /* Carousel & Jumbo Header */
+div.carousel-jumbo-container {
+  position: relative;
+  top: -1px;
+}
 div.carousel {
   height: 250px;
   position: relative;
-  top: 10px;
   overflow:hidden;
 }
 div.carousel:before{
